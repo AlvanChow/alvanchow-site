@@ -80,6 +80,25 @@
 
   .writing{margin-top:2px;border-top:none}
 
+  details.shelved{margin-top:2px}
+  details.shelved summary{
+    cursor:pointer;
+    list-style:none;
+    font-size:13px;
+    font-weight:500;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--faint);
+    padding:14px 0 5px;
+    border-bottom:1px solid var(--line);
+    margin-bottom:6px;
+  }
+  details.shelved summary::-webkit-details-marker{display:none}
+  details.shelved summary::after{content:" +"}
+  details.shelved[open] summary::after{content:" \2212"}
+  details.shelved .title-line{color:var(--soft)}
+  details.shelved .meta{color:var(--faint)}
+
   footer{
     margin-top:36px;
     padding-top:16px;
@@ -116,23 +135,8 @@
     </div>
 
     <div class="project">
-      <div class="title-line">LockedIn<span class="status">in development</span></div>
-      <p class="meta">AI matching for recruiters and job hunters</p>
-    </div>
-
-    <div class="project">
       <div class="title-line">KillmyBill<span class="site"><a href="https://www.killmybill.help/">killmybill.help</a></span><span class="status live">live &middot; beta</span></div>
       <p class="meta">Audit medical bills and fight back</p>
-    </div>
-
-    <div class="project">
-      <div class="title-line">Portops<span class="status">prototype</span></div>
-      <p class="meta">One dashboard for your projects and revenue</p>
-    </div>
-
-    <div class="project">
-      <div class="title-line">Monetizer<span class="status">prototype</span></div>
-      <p class="meta">Drop-in ads for any website</p>
     </div>
 
   </section>
@@ -146,11 +150,6 @@
     </div>
 
     <div class="project">
-      <div class="title-line">Election Map<span class="site"><a href="https://election-map-kappa.vercel.app/">visit</a></span><span class="status live">live &middot; beta</span></div>
-      <p class="meta">Live results for every 2026 race</p>
-    </div>
-
-    <div class="project">
       <div class="title-line">Small Wins<span class="site"><a href="https://apps.apple.com/us/app/small-wins-one-by-one/id6791821350">App Store</a></span><span class="status live">live on the App Store</span></div>
       <p class="meta">A gentle daily journal for three tiny wins</p>
     </div>
@@ -158,11 +157,6 @@
     <div class="project">
       <div class="title-line">Tanzaku<span class="status">in development</span></div>
       <p class="meta">A wish tree. Write a wish and tie it on</p>
-    </div>
-
-    <div class="project">
-      <div class="title-line">Ascend<span class="status">prototype</span></div>
-      <p class="meta">A daily habit garden. No streak shame</p>
     </div>
 
     <div class="project">
@@ -235,6 +229,36 @@
   </div>
 
 </section>
+
+<details class="shelved">
+  <summary>Shelved</summary>
+
+  <div class="project">
+    <div class="title-line">Election Map<span class="site"><a href="https://election-map-kappa.vercel.app/">visit</a></span></div>
+    <p class="meta">Live results for every 2026 race</p>
+  </div>
+
+  <div class="project">
+    <div class="title-line">Ascend</div>
+    <p class="meta">A daily habit garden. No streak shame</p>
+  </div>
+
+  <div class="project">
+    <div class="title-line">LockedIn</div>
+    <p class="meta">AI matching for recruiters and job hunters</p>
+  </div>
+
+  <div class="project">
+    <div class="title-line">Portops</div>
+    <p class="meta">One dashboard for your projects and revenue</p>
+  </div>
+
+  <div class="project">
+    <div class="title-line">Monetizer</div>
+    <p class="meta">Drop-in ads for any website</p>
+  </div>
+
+</details>
 
 <footer>
   © 2026 Alvan Chow &nbsp;|&nbsp; <a href="https://github.com/AlvanChow">GitHub</a>
