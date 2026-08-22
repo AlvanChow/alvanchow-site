@@ -12,3 +12,5 @@ Style rules, always enforced:
 - Sections: Productivity Tools, Consumer Apps, Moonshots, Gaming in a 2-column grid, then Writing full-width.
 
 After every edit: commit with a short message and push to main.
+
+Never schedule check-ins, reminders, or recurring triggers, and never subscribe to PR activity. Do the work, push, and end the turn.
